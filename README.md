@@ -18,7 +18,17 @@ npm test                 # unit tests (no Supabase needed)
 ```
 Production: `npm run build && npm start` behind HTTPS (set `NODE_ENV=production`, `TRUST_PROXY=1` behind one proxy).
 
-## 3. API (all routes except /auth/* and /healthz need a session)
+## 3. Deploy to Render
+This repository includes a Render Blueprint in `render.yaml`.
+
+1. Push the project to GitHub, then in Render choose **New → Blueprint** and select this repository. Render will create the `vertivo-qc-api` web service.
+2. In the service's **Environment** settings, add `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, and `FRONTEND_ORIGIN`. Get the Supabase values from your project's API settings. Set `FRONTEND_ORIGIN` to the exact HTTPS origin of the deployed frontend, with no trailing slash (for example, `https://app.example.com`).
+3. Keep the service-role key only in Render's environment settings. Do not put it in frontend configuration or commit it.
+4. After deployment, verify the service's `/healthz` endpoint returns `{"ok":true}`.
+
+The Blueprint uses `npm ci && npm run build`, `npm start`, and `/healthz` as the health check. Render supplies `PORT`; the server listens on it automatically. `NODE_ENV=production` and `TRUST_PROXY=1` are configured by the Blueprint. Since authentication uses `SameSite=Strict` cookies, host the frontend and API on the same site (for example, `app.example.com` and `api.example.com`).
+
+## 4. API (all routes except /auth/* and /healthz need a session)
 | Method | Path | Notes |
 |---|---|---|
 | GET | /auth/csrf | returns CSRF token (also sets cookie) |
@@ -34,7 +44,7 @@ Production: `npm run build && npm start` behind HTTPS (set `NODE_ENV=production`
 | GET | /deliveries/:id/stats | total / checked / issues / per section |
 | GET | /deliveries/:id/export.csv · /backup.json | |
 
-## 4. Security notes
+## 5. Security notes
 - **Secrets**: `SUPABASE_SERVICE_ROLE_KEY` exists only here. `.env` is git-ignored; env is validated at boot and values are never logged.
 - **DB lockdown**: RLS enabled with no policies + revoked grants → the anon key reads nothing. Storage bucket is private.
 - **Sessions**: Supabase tokens live in `HttpOnly; Secure; SameSite=Strict` cookies — never in JS or localStorage. Refresh cookie is scoped to `/auth`.
