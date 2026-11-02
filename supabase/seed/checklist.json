@@ -1,0 +1,1039 @@
+{
+  "Structure": [
+    {
+      "sno": "1",
+      "name": "Vertical Base Plate",
+      "size": "150 X 100 X 8 mm",
+      "material": "MS",
+      "required": ""
+    },
+    {
+      "sno": "2",
+      "name": "Right Vertical Structure",
+      "size": "2300",
+      "material": "MS",
+      "required": 12
+    },
+    {
+      "sno": "3",
+      "name": "Right Vertical Structure cover",
+      "size": "2300",
+      "material": "MS",
+      "required": 12
+    },
+    {
+      "sno": "4",
+      "name": "Right Custom Vertical Structure",
+      "size": "2030",
+      "material": "MS",
+      "required": 2
+    },
+    {
+      "sno": "5",
+      "name": "Right Custom Vertical Structure Cover",
+      "size": "2030",
+      "material": "MS",
+      "required": 2
+    },
+    {
+      "sno": "6",
+      "name": "Left Verical Structure",
+      "size": "2300",
+      "material": "MS",
+      "required": 10
+    },
+    {
+      "sno": "7",
+      "name": "Left Vertical Structure cover",
+      "size": "2300",
+      "material": "MS",
+      "required": 10
+    },
+    {
+      "sno": "8",
+      "name": "Left Custom Vertical Structure",
+      "size": "2030",
+      "material": "MS",
+      "required": 2
+    },
+    {
+      "sno": "9",
+      "name": "Left Custom Vertical Structure Cover",
+      "size": "2030",
+      "material": "MS",
+      "required": 2
+    },
+    {
+      "sno": "10",
+      "name": "Right & Left horizontal Structure",
+      "size": "1125",
+      "material": "MS",
+      "required": 24
+    },
+    {
+      "sno": "11",
+      "name": "Mechanism Side horizontal Structure cover",
+      "size": "1125",
+      "material": "MS",
+      "required": 12
+    },
+    {
+      "sno": "12",
+      "name": "Non Mechanism Side horizontal Structure cover",
+      "size": "1125",
+      "material": "MS",
+      "required": 12
+    },
+    {
+      "sno": "13",
+      "name": "Rear horizontal Structure",
+      "size": "1000",
+      "material": "MS",
+      "required": 13
+    },
+    {
+      "sno": "14",
+      "name": "Rear horizontal Structure Cover",
+      "size": "1000",
+      "material": "MS",
+      "required": 13
+    },
+    {
+      "sno": "15",
+      "name": "Pit Sill panel Center Opening",
+      "size": "Length  Width 50mm, Depth 35mm",
+      "material": "MS",
+      "required": 1
+    },
+    {
+      "sno": "16",
+      "name": "Pit Sill panel Telescopic Opening",
+      "size": "Length Width 80mm, Depth 35mm",
+      "material": "MS",
+      "required": 1
+    },
+    {
+      "sno": "17",
+      "name": "Sill panel Center Opening",
+      "size": "Length  Width 50mm, Depth 35mm",
+      "material": "MS",
+      "required": ""
+    },
+    {
+      "sno": "18",
+      "name": "Sill panel Telescopic Opening",
+      "size": "Length Width 80mm, Depth 35mm",
+      "material": "MS",
+      "required": ""
+    },
+    {
+      "sno": "19",
+      "name": "Header Panel",
+      "size": "1000",
+      "material": "MS",
+      "required": 4
+    },
+    {
+      "sno": "20",
+      "name": "Header Panel Cover",
+      "size": "1000",
+      "material": "MS",
+      "required": ""
+    },
+    {
+      "sno": "21",
+      "name": "Pit Panel Right & Left",
+      "size": "1000",
+      "material": "MS",
+      "required": 2
+    },
+    {
+      "sno": "22",
+      "name": "Pit Panel rear",
+      "size": "1000",
+      "material": "MS",
+      "required": 2
+    },
+    {
+      "sno": "23",
+      "name": "Pit Panel Right & Left cover",
+      "size": "1000",
+      "material": "MS",
+      "required": ""
+    },
+    {
+      "sno": "24",
+      "name": "Pit Panel rear cover",
+      "size": "1000",
+      "material": "MS",
+      "required": ""
+    },
+    {
+      "sno": "25",
+      "name": "Steady bracket",
+      "size": "",
+      "material": "MS",
+      "required": 12
+    },
+    {
+      "sno": "26",
+      "name": "M12 Anchor Bolt with washer & Nut",
+      "size": "M12 X 100mm",
+      "material": "Standard",
+      "required": ""
+    },
+    {
+      "sno": "27",
+      "name": "M10 Anchor Bolt with washer & Nut",
+      "size": "M10 X 100mm",
+      "material": "Standard",
+      "required": ""
+    },
+    {
+      "sno": "27",
+      "name": "M8 Hexagonal Bolt",
+      "size": "M8 X 20mm",
+      "material": "Standard",
+      "required": ""
+    },
+    {
+      "sno": "28",
+      "name": "M8 Plate washer",
+      "size": "M8 Plate washer",
+      "material": "Standard",
+      "required": ""
+    },
+    {
+      "sno": "29",
+      "name": "M8 Nylon lock nut",
+      "size": "M8 Nylon lock Nut",
+      "material": "Standard",
+      "required": ""
+    },
+    {
+      "sno": "30",
+      "name": "M8 Normal nut",
+      "size": "M8 Normal nut",
+      "material": "Standard",
+      "required": ""
+    },
+    {
+      "sno": "31",
+      "name": "M4 Pop nut",
+      "size": "M4 pop nut",
+      "material": "Standard",
+      "required": ""
+    },
+    {
+      "sno": "32",
+      "name": "M4 Flange head start screw",
+      "size": "M4 X 10mm",
+      "material": "Standard",
+      "required": 500
+    }
+  ],
+  "Mechanical Kit": [
+    {
+      "sno": "1",
+      "name": "Rail Guide Bracket",
+      "size": "Base Plate outer dimension for 600 DBG - 630 mm 700 DBG - 730 mm 800 DBG - 830 mm 900 DBG - 930 mm Car rail hole pitch 9mm Guide rail - 85mm 16mm Guide rail - 110 mm",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "2",
+      "name": "Rail Bracket Fixing Plate",
+      "size": "149 X 80 X 5 mm Thickness M10 X 35mm Bolt 2 no`s weld",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "3",
+      "name": "Car Guide Rail",
+      "size": "9 mm Guide thickness with machined Length - 5 Meter",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "4",
+      "name": "Counter Guide Rail",
+      "size": "5 mm Guide thickness unmachined Length - 5 Meter",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "5",
+      "name": "Car rail fish plate",
+      "size": "One side machined surface",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "6",
+      "name": "Counter rail fish plate",
+      "size": "No machined surface",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "7",
+      "name": "Car Frame Right",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "8",
+      "name": "Car Frame Left",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "9",
+      "name": "Car Frame Bottom Support Assembly",
+      "size": "Outer Dimension 600 DBG - 647 X 207 X 107 mm 700 DBG - 747 X 207 X 107 mm 800 DBG - 847 X 207 X 107 mm 900 DBG - 947 X 207 X 107 mm",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "10",
+      "name": "Car Frame Top Support Assembly",
+      "size": "Outer Dimension 600 DBG - 659 X 187 X 205 mm 700 DBG - 759 X 187 X 205 mm 800 DBG - 859 X 187 X 205 mm 900 DBG - 959 X 187 X 205 mm",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "11",
+      "name": "OSG Bottom Pulley Assembly",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "12",
+      "name": "Counter Weight Frame",
+      "size": "Outer Dimension 600 DBG - 368 mm 700 DBG - 468 mm 800 DBG - 568 mm 900 DBG - 640 mm",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "13",
+      "name": "Limit Cam",
+      "size": "1500 X 50 X 50 mm Thickness - 3 mm",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "14",
+      "name": "Rail Guide Base Plate",
+      "size": "Outer Dimension 600 DBG - 725 mm 700 DBG - 825 mm 800 DBG - 925 mm 900 DBG - 1025 mm",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "15",
+      "name": "ARD Bracket",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "16",
+      "name": "Cable Traffle",
+      "size": "",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "17",
+      "name": "Cable Traffle Bracket",
+      "size": "Outer Dimension 600 DBG - 468 mm 700 DBG - 568 mm 800 DBG - 668 mm 900 DBG - 768 mm",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "18",
+      "name": "Montanari Motor Bed",
+      "size": "Outer holes to holes dimension 600 DBG - 610 mm 700 DBG - 710 mm 800 DBG - 810 mm 900 DBG - 910 mm",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "19",
+      "name": "Motor Bed Support Bracket",
+      "size": "133 X 125 X 120 mm 3 mm Thickness",
+      "material": "",
+      "required": 2
+    },
+    {
+      "sno": "20",
+      "name": "Counter Weight",
+      "size": "Outer Dimension 600 DBG - 325 mm 700 DBG - 425 mm 800 DBG - 525 mm 900 DBG - 625 mm",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "21",
+      "name": "Pulley locking plate",
+      "size": "90 X 25 X 3 mm",
+      "material": "",
+      "required": 4
+    },
+    {
+      "sno": "22",
+      "name": "Shoe Washer",
+      "size": "OD - 57 mm ID - 17 mm Thickness - 3 mm",
+      "material": "",
+      "required": 4
+    },
+    {
+      "sno": "23",
+      "name": "Link Plate",
+      "size": "165 X 22 X 3 mm",
+      "material": "",
+      "required": 2
+    },
+    {
+      "sno": "24",
+      "name": "Cross Bar",
+      "size": "Outer Dimension 600 DBG -  1250 mm 700 DBG - 1300 mm 800 DBG - 1350 mm 900 DBG - 1400 mm",
+      "material": "",
+      "required": 2
+    },
+    {
+      "sno": "25",
+      "name": "Limit switch bracket",
+      "size": "250 X 100 X 80 mm Thickness - 4 mm",
+      "material": "",
+      "required": 6
+    },
+    {
+      "sno": "26",
+      "name": "OSG Rod",
+      "size": "Outer Dimension 600 DBG -  684 mm 700 DBG - 784 mm 800 DBG - 884 mm 900 DBG - 984 mm",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "27",
+      "name": "OSG locking pad",
+      "size": "OD - 55 mm Inner 25 Square Thickness - 16 mm",
+      "material": "",
+      "required": 2
+    },
+    {
+      "sno": "28",
+      "name": "Counter Pulley Cover",
+      "size": "190 X 80 X 25 mm Thickness - 3 mm",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "29",
+      "name": "Car Pulley cover",
+      "size": "195 X 140 X 25 mm Thickness - 3 mm",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "30",
+      "name": "Cabin Study Bracket",
+      "size": "900 X 220 X 200 mm Thickness - 4 mm",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "31",
+      "name": "Locking Plate",
+      "size": "90 X 25 X 3 mm Dia 6.5 mm holes with 75mm Pitch",
+      "material": "",
+      "required": 4
+    },
+    {
+      "sno": "32",
+      "name": "OSG Lock",
+      "size": "165 X 40 X 4 mm",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "33",
+      "name": "Counter frame lock",
+      "size": "100 X 80 X 50 mm Thickness - 4 mm",
+      "material": "",
+      "required": 2
+    },
+    {
+      "sno": "34",
+      "name": "Car Frame, Guide Lock",
+      "size": "165 X 105 X 6 mm",
+      "material": "",
+      "required": 2
+    },
+    {
+      "sno": "35",
+      "name": "Square washer",
+      "size": "80 X 80 X 6 mm",
+      "material": "",
+      "required": 2
+    },
+    {
+      "sno": "36",
+      "name": "Limit Cam Fixing Plate",
+      "size": "100 X 50 X 4 mm",
+      "material": "",
+      "required": 2
+    },
+    {
+      "sno": "37",
+      "name": "Top OSG Bracket",
+      "size": "197 X 148 X 100 mm Thickness - 6mm",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "38",
+      "name": "Counter Weight Lock",
+      "size": "130 X 30 X 4 mm",
+      "material": "",
+      "required": 2
+    },
+    {
+      "sno": "39",
+      "name": "Header Bracket",
+      "size": "Each Floor 2 no`s need RH - 1 no & LH - 1 no",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "40",
+      "name": "Header Bracket Fixing Plate with 10mm Bolt Weld",
+      "size": "Each Floor 2 no`s need",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "41",
+      "name": "Limit Switch Fixing Bracket",
+      "size": "149 X 80 X 4 mm Thickness M6 X 30mm Bolt weld If site need",
+      "material": "",
+      "required": 6
+    },
+    {
+      "sno": "42",
+      "name": "E-SIM",
+      "size": "",
+      "material": "",
+      "required": 100
+    },
+    {
+      "sno": "43",
+      "name": "Shoe Packing",
+      "size": "",
+      "material": "",
+      "required": 30
+    },
+    {
+      "sno": "44",
+      "name": "Shoe packing plate washer 2.5",
+      "size": "OD Dia 50mm ID Dia 26mm Thickness 2.5mm",
+      "material": "",
+      "required": 4
+    },
+    {
+      "sno": "45",
+      "name": "Shoe packing plate washer 1.5",
+      "size": "OD Dia 50mm ID Dia 26mm Thickness 1.5mm",
+      "material": "",
+      "required": 4
+    },
+    {
+      "sno": "46",
+      "name": "OSG Spring",
+      "size": "Standard",
+      "material": "",
+      "required": 2
+    },
+    {
+      "sno": "47",
+      "name": "OSG rope fixing eye clamp",
+      "size": "Standard",
+      "material": "",
+      "required": 2
+    },
+    {
+      "sno": "48",
+      "name": "Montanari motor set",
+      "size": "Standard",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "49",
+      "name": "Montanari belt",
+      "size": "Standard",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "50",
+      "name": "OSG",
+      "size": "Standard",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "51",
+      "name": "Buffer",
+      "size": "Standard",
+      "material": "",
+      "required": 3
+    },
+    {
+      "sno": "52",
+      "name": "OSG Rope",
+      "size": "6mm Dia Rope",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "53",
+      "name": "Bull Dog Clip",
+      "size": "6mm Rope",
+      "material": "",
+      "required": 4
+    },
+    {
+      "sno": "54",
+      "name": "12mm rail clip",
+      "size": "Standard",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "55",
+      "name": "10mm rail clip",
+      "size": "Standard",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "56",
+      "name": "M12 Hexagonal Bolt",
+      "size": "M12 X 25mm",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "57",
+      "name": "M12 Hexagonal Bolt",
+      "size": "M12 X 40mm",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "58",
+      "name": "M12 Hexagonal Bolt",
+      "size": "M12 X 55mm",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "59",
+      "name": "M12 Plate washer",
+      "size": "M12 Big size",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "60",
+      "name": "M12 Spring washer",
+      "size": "M12 Standard",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "61",
+      "name": "M12 Nut",
+      "size": "M12 Standard",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "62",
+      "name": "M10 Hexagonal Bolt",
+      "size": "M10 X 25mm",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "63",
+      "name": "M10 Hexagonal Bolt",
+      "size": "M10 X 40mm",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "64",
+      "name": "M10 Plate washer",
+      "size": "M10 Big size",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "65",
+      "name": "M10 Spring washer",
+      "size": "M10 Standard",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "66",
+      "name": "M10 Nut",
+      "size": "M10 Standard",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "67",
+      "name": "M8 Hexagonal Bolt",
+      "size": "M8 X 20mm",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "68",
+      "name": "M8 Hexagonal Bolt",
+      "size": "M8 X 30mm",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "69",
+      "name": "M8 Plate washer",
+      "size": "M8 Big size",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "70",
+      "name": "M8 Spring washer",
+      "size": "M8 Standard",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "71",
+      "name": "M8 Nut",
+      "size": "M8 Standard",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "72",
+      "name": "M6 Hexagonal Bolt",
+      "size": "M6 X 25mm",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "73",
+      "name": "M6 Hexagonal Bolt",
+      "size": "M6 X 55mm",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "74",
+      "name": "M6 Plate washer",
+      "size": "M6 Big size",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "75",
+      "name": "M6 Nut",
+      "size": "M6 Standard",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "76",
+      "name": "Black Spray Paint",
+      "size": "Standard",
+      "material": "",
+      "required": 5
+    },
+    {
+      "sno": "77",
+      "name": "3mm Double side tape",
+      "size": "Standard",
+      "material": "",
+      "required": 3
+    },
+    {
+      "sno": "78",
+      "name": "4 inch Cutting wheel",
+      "size": "Standard",
+      "material": "",
+      "required": 6
+    },
+    {
+      "sno": "79",
+      "name": "Self Drilling & Tapping Screw",
+      "size": "3/4 inch length flange star head",
+      "material": "",
+      "required": 70
+    }
+  ],
+  "Door Frame & Door": [
+    {
+      "sno": "1",
+      "name": "Header Kit",
+      "size": "Standard Based on the floor the quantity required",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "2",
+      "name": "Header Bracket",
+      "size": "Each Floor 2 no`s need RH - 1 no & LH - 1 no",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "3",
+      "name": "Header Bracket Fixing Plate with 10mm Bolt Weld",
+      "size": "Each Floor 2 no`s need",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "4",
+      "name": "Car Door set Assembly",
+      "size": "",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "5",
+      "name": "Landing Door set Assembly",
+      "size": "",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "6",
+      "name": "LOP",
+      "size": "Standard Based on the floor the quantity required",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "7",
+      "name": "COP",
+      "size": "Standard",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "8",
+      "name": "LH Door Frame with sub assembly",
+      "size": "",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "9",
+      "name": "RH Door Frame with sub assembly",
+      "size": "",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "10",
+      "name": "LOP Side Panel",
+      "size": "",
+      "material": "",
+      "required": ""
+    },
+    {
+      "sno": "11",
+      "name": "Lentile Panels",
+      "size": "",
+      "material": "",
+      "required": ""
+    }
+  ],
+  "Cabin": [
+    {
+      "sno": "1",
+      "name": "Base Plate With Sub Assembly",
+      "size": "",
+      "material": "MS",
+      "required": 1
+    },
+    {
+      "sno": "2",
+      "name": "Top Plate With Sub Assembly",
+      "size": "",
+      "material": "MS",
+      "required": 1
+    },
+    {
+      "sno": "3",
+      "name": "Sill Bracket",
+      "size": "",
+      "material": "MS",
+      "required": 1
+    },
+    {
+      "sno": "4",
+      "name": "Left Side Glass Panel",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "5",
+      "name": "Rear Side Glass Panel",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "6",
+      "name": "COP Panel",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "7",
+      "name": "COP side LH Panel",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "8",
+      "name": "COP side RH Panel",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "9",
+      "name": "COP Back Side Cover",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "10",
+      "name": "Front Right Side panel",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "11",
+      "name": "Front Left Side panel",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "12",
+      "name": "Lentile",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "13",
+      "name": "Fall Ceilling",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "14",
+      "name": "Fall Ceilling Bracket",
+      "size": "",
+      "material": "",
+      "required": 4
+    },
+    {
+      "sno": "15",
+      "name": "M8 Bolt",
+      "size": "M8 X 25mm",
+      "material": "Standard",
+      "required": 120
+    },
+    {
+      "sno": "16",
+      "name": "M8 Plate washer",
+      "size": "Standard",
+      "material": "Standard",
+      "required": 240
+    },
+    {
+      "sno": "17",
+      "name": "M8 Nut",
+      "size": "Standard",
+      "material": "Standard",
+      "required": 120
+    },
+    {
+      "sno": "18",
+      "name": "Lift to Floor Gap Plate Based on the floor",
+      "size": "",
+      "material": "MS",
+      "required": ""
+    },
+    {
+      "sno": "20",
+      "name": "Left side LH panel",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "21",
+      "name": "Left side Centre panel",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "22",
+      "name": "Left side RH panel",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "23",
+      "name": "Rear side LH panel",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "24",
+      "name": "Rear side Centre panel",
+      "size": "",
+      "material": "",
+      "required": 1
+    },
+    {
+      "sno": "25",
+      "name": "Rear side RH panel",
+      "size": "",
+      "material": "",
+      "required": 1
+    }
+  ]
+}

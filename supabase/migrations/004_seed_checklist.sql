@@ -1,0 +1,177 @@
+-- Generated from the original HTML checklist (147 items). Run once.
+
+insert into public.checklist_sections (name, sort_order) values ('Structure', 1);
+insert into public.checklist_sections (name, sort_order) values ('Mechanical Kit', 2);
+insert into public.checklist_sections (name, sort_order) values ('Door Frame & Door', 3);
+insert into public.checklist_sections (name, sort_order) values ('Cabin', 4);
+
+-- Structure
+insert into public.checklist_items (section_id, sno, name, size, material, required_qty, sort_order)
+select s.id, v.sno, v.name, v.size, v.material, v.required_qty, v.sort_order from (values
+  ('1', 'Vertical Base Plate', '150 X 100 X 8 mm', 'MS', null::int, 1),
+  ('2', 'Right Vertical Structure', '2300', 'MS', 12, 2),
+  ('3', 'Right Vertical Structure cover', '2300', 'MS', 12, 3),
+  ('4', 'Right Custom Vertical Structure', '2030', 'MS', 2, 4),
+  ('5', 'Right Custom Vertical Structure Cover', '2030', 'MS', 2, 5),
+  ('6', 'Left Verical Structure', '2300', 'MS', 10, 6),
+  ('7', 'Left Vertical Structure cover', '2300', 'MS', 10, 7),
+  ('8', 'Left Custom Vertical Structure', '2030', 'MS', 2, 8),
+  ('9', 'Left Custom Vertical Structure Cover', '2030', 'MS', 2, 9),
+  ('10', 'Right & Left horizontal Structure', '1125', 'MS', 24, 10),
+  ('11', 'Mechanism Side horizontal Structure cover', '1125', 'MS', 12, 11),
+  ('12', 'Non Mechanism Side horizontal Structure cover', '1125', 'MS', 12, 12),
+  ('13', 'Rear horizontal Structure', '1000', 'MS', 13, 13),
+  ('14', 'Rear horizontal Structure Cover', '1000', 'MS', 13, 14),
+  ('15', 'Pit Sill panel Center Opening', 'Length  Width 50mm, Depth 35mm', 'MS', 1, 15),
+  ('16', 'Pit Sill panel Telescopic Opening', 'Length Width 80mm, Depth 35mm', 'MS', 1, 16),
+  ('17', 'Sill panel Center Opening', 'Length  Width 50mm, Depth 35mm', 'MS', null::int, 17),
+  ('18', 'Sill panel Telescopic Opening', 'Length Width 80mm, Depth 35mm', 'MS', null::int, 18),
+  ('19', 'Header Panel', '1000', 'MS', 4, 19),
+  ('20', 'Header Panel Cover', '1000', 'MS', null::int, 20),
+  ('21', 'Pit Panel Right & Left', '1000', 'MS', 2, 21),
+  ('22', 'Pit Panel rear', '1000', 'MS', 2, 22),
+  ('23', 'Pit Panel Right & Left cover', '1000', 'MS', null::int, 23),
+  ('24', 'Pit Panel rear cover', '1000', 'MS', null::int, 24),
+  ('25', 'Steady bracket', '', 'MS', 12, 25),
+  ('26', 'M12 Anchor Bolt with washer & Nut', 'M12 X 100mm', 'Standard', null::int, 26),
+  ('27', 'M10 Anchor Bolt with washer & Nut', 'M10 X 100mm', 'Standard', null::int, 27),
+  ('27', 'M8 Hexagonal Bolt', 'M8 X 20mm', 'Standard', null::int, 28),
+  ('28', 'M8 Plate washer', 'M8 Plate washer', 'Standard', null::int, 29),
+  ('29', 'M8 Nylon lock nut', 'M8 Nylon lock Nut', 'Standard', null::int, 30),
+  ('30', 'M8 Normal nut', 'M8 Normal nut', 'Standard', null::int, 31),
+  ('31', 'M4 Pop nut', 'M4 pop nut', 'Standard', null::int, 32),
+  ('32', 'M4 Flange head start screw', 'M4 X 10mm', 'Standard', 500, 33)
+) as v(sno, name, size, material, required_qty, sort_order)
+cross join public.checklist_sections s where s.name = 'Structure';
+
+-- Mechanical Kit
+insert into public.checklist_items (section_id, sno, name, size, material, required_qty, sort_order)
+select s.id, v.sno, v.name, v.size, v.material, v.required_qty, v.sort_order from (values
+  ('1', 'Rail Guide Bracket', 'Base Plate outer dimension for 600 DBG - 630 mm 700 DBG - 730 mm 800 DBG - 830 mm 900 DBG - 930 mm Car rail hole pitch 9mm Guide rail - 85mm 16mm Guide rail - 110 mm', '', null::int, 1),
+  ('2', 'Rail Bracket Fixing Plate', '149 X 80 X 5 mm Thickness M10 X 35mm Bolt 2 no`s weld', '', null::int, 2),
+  ('3', 'Car Guide Rail', '9 mm Guide thickness with machined Length - 5 Meter', '', null::int, 3),
+  ('4', 'Counter Guide Rail', '5 mm Guide thickness unmachined Length - 5 Meter', '', null::int, 4),
+  ('5', 'Car rail fish plate', 'One side machined surface', '', null::int, 5),
+  ('6', 'Counter rail fish plate', 'No machined surface', '', null::int, 6),
+  ('7', 'Car Frame Right', '', '', 1, 7),
+  ('8', 'Car Frame Left', '', '', 1, 8),
+  ('9', 'Car Frame Bottom Support Assembly', 'Outer Dimension 600 DBG - 647 X 207 X 107 mm 700 DBG - 747 X 207 X 107 mm 800 DBG - 847 X 207 X 107 mm 900 DBG - 947 X 207 X 107 mm', '', 1, 9),
+  ('10', 'Car Frame Top Support Assembly', 'Outer Dimension 600 DBG - 659 X 187 X 205 mm 700 DBG - 759 X 187 X 205 mm 800 DBG - 859 X 187 X 205 mm 900 DBG - 959 X 187 X 205 mm', '', 1, 10),
+  ('11', 'OSG Bottom Pulley Assembly', '', '', 1, 11),
+  ('12', 'Counter Weight Frame', 'Outer Dimension 600 DBG - 368 mm 700 DBG - 468 mm 800 DBG - 568 mm 900 DBG - 640 mm', '', 1, 12),
+  ('13', 'Limit Cam', '1500 X 50 X 50 mm Thickness - 3 mm', '', 1, 13),
+  ('14', 'Rail Guide Base Plate', 'Outer Dimension 600 DBG - 725 mm 700 DBG - 825 mm 800 DBG - 925 mm 900 DBG - 1025 mm', '', 1, 14),
+  ('15', 'ARD Bracket', '', '', 1, 15),
+  ('16', 'Cable Traffle', '', '', null::int, 16),
+  ('17', 'Cable Traffle Bracket', 'Outer Dimension 600 DBG - 468 mm 700 DBG - 568 mm 800 DBG - 668 mm 900 DBG - 768 mm', '', null::int, 17),
+  ('18', 'Montanari Motor Bed', 'Outer holes to holes dimension 600 DBG - 610 mm 700 DBG - 710 mm 800 DBG - 810 mm 900 DBG - 910 mm', '', 1, 18),
+  ('19', 'Motor Bed Support Bracket', '133 X 125 X 120 mm 3 mm Thickness', '', 2, 19),
+  ('20', 'Counter Weight', 'Outer Dimension 600 DBG - 325 mm 700 DBG - 425 mm 800 DBG - 525 mm 900 DBG - 625 mm', '', null::int, 20),
+  ('21', 'Pulley locking plate', '90 X 25 X 3 mm', '', 4, 21),
+  ('22', 'Shoe Washer', 'OD - 57 mm ID - 17 mm Thickness - 3 mm', '', 4, 22),
+  ('23', 'Link Plate', '165 X 22 X 3 mm', '', 2, 23),
+  ('24', 'Cross Bar', 'Outer Dimension 600 DBG -  1250 mm 700 DBG - 1300 mm 800 DBG - 1350 mm 900 DBG - 1400 mm', '', 2, 24),
+  ('25', 'Limit switch bracket', '250 X 100 X 80 mm Thickness - 4 mm', '', 6, 25),
+  ('26', 'OSG Rod', 'Outer Dimension 600 DBG -  684 mm 700 DBG - 784 mm 800 DBG - 884 mm 900 DBG - 984 mm', '', 1, 26),
+  ('27', 'OSG locking pad', 'OD - 55 mm Inner 25 Square Thickness - 16 mm', '', 2, 27),
+  ('28', 'Counter Pulley Cover', '190 X 80 X 25 mm Thickness - 3 mm', '', 1, 28),
+  ('29', 'Car Pulley cover', '195 X 140 X 25 mm Thickness - 3 mm', '', 1, 29),
+  ('30', 'Cabin Study Bracket', '900 X 220 X 200 mm Thickness - 4 mm', '', 1, 30),
+  ('31', 'Locking Plate', '90 X 25 X 3 mm Dia 6.5 mm holes with 75mm Pitch', '', 4, 31),
+  ('32', 'OSG Lock', '165 X 40 X 4 mm', '', 1, 32),
+  ('33', 'Counter frame lock', '100 X 80 X 50 mm Thickness - 4 mm', '', 2, 33),
+  ('34', 'Car Frame, Guide Lock', '165 X 105 X 6 mm', '', 2, 34),
+  ('35', 'Square washer', '80 X 80 X 6 mm', '', 2, 35),
+  ('36', 'Limit Cam Fixing Plate', '100 X 50 X 4 mm', '', 2, 36),
+  ('37', 'Top OSG Bracket', '197 X 148 X 100 mm Thickness - 6mm', '', 1, 37),
+  ('38', 'Counter Weight Lock', '130 X 30 X 4 mm', '', 2, 38),
+  ('39', 'Header Bracket', 'Each Floor 2 no`s need RH - 1 no & LH - 1 no', '', null::int, 39),
+  ('40', 'Header Bracket Fixing Plate with 10mm Bolt Weld', 'Each Floor 2 no`s need', '', null::int, 40),
+  ('41', 'Limit Switch Fixing Bracket', '149 X 80 X 4 mm Thickness M6 X 30mm Bolt weld If site need', '', 6, 41),
+  ('42', 'E-SIM', '', '', 100, 42),
+  ('43', 'Shoe Packing', '', '', 30, 43),
+  ('44', 'Shoe packing plate washer 2.5', 'OD Dia 50mm ID Dia 26mm Thickness 2.5mm', '', 4, 44),
+  ('45', 'Shoe packing plate washer 1.5', 'OD Dia 50mm ID Dia 26mm Thickness 1.5mm', '', 4, 45),
+  ('46', 'OSG Spring', 'Standard', '', 2, 46),
+  ('47', 'OSG rope fixing eye clamp', 'Standard', '', 2, 47),
+  ('48', 'Montanari motor set', 'Standard', '', null::int, 48),
+  ('49', 'Montanari belt', 'Standard', '', null::int, 49),
+  ('50', 'OSG', 'Standard', '', null::int, 50),
+  ('51', 'Buffer', 'Standard', '', 3, 51),
+  ('52', 'OSG Rope', '6mm Dia Rope', '', null::int, 52),
+  ('53', 'Bull Dog Clip', '6mm Rope', '', 4, 53),
+  ('54', '12mm rail clip', 'Standard', '', null::int, 54),
+  ('55', '10mm rail clip', 'Standard', '', null::int, 55),
+  ('56', 'M12 Hexagonal Bolt', 'M12 X 25mm', '', null::int, 56),
+  ('57', 'M12 Hexagonal Bolt', 'M12 X 40mm', '', null::int, 57),
+  ('58', 'M12 Hexagonal Bolt', 'M12 X 55mm', '', null::int, 58),
+  ('59', 'M12 Plate washer', 'M12 Big size', '', null::int, 59),
+  ('60', 'M12 Spring washer', 'M12 Standard', '', null::int, 60),
+  ('61', 'M12 Nut', 'M12 Standard', '', null::int, 61),
+  ('62', 'M10 Hexagonal Bolt', 'M10 X 25mm', '', null::int, 62),
+  ('63', 'M10 Hexagonal Bolt', 'M10 X 40mm', '', null::int, 63),
+  ('64', 'M10 Plate washer', 'M10 Big size', '', null::int, 64),
+  ('65', 'M10 Spring washer', 'M10 Standard', '', null::int, 65),
+  ('66', 'M10 Nut', 'M10 Standard', '', null::int, 66),
+  ('67', 'M8 Hexagonal Bolt', 'M8 X 20mm', '', null::int, 67),
+  ('68', 'M8 Hexagonal Bolt', 'M8 X 30mm', '', null::int, 68),
+  ('69', 'M8 Plate washer', 'M8 Big size', '', null::int, 69),
+  ('70', 'M8 Spring washer', 'M8 Standard', '', null::int, 70),
+  ('71', 'M8 Nut', 'M8 Standard', '', null::int, 71),
+  ('72', 'M6 Hexagonal Bolt', 'M6 X 25mm', '', null::int, 72),
+  ('73', 'M6 Hexagonal Bolt', 'M6 X 55mm', '', null::int, 73),
+  ('74', 'M6 Plate washer', 'M6 Big size', '', null::int, 74),
+  ('75', 'M6 Nut', 'M6 Standard', '', null::int, 75),
+  ('76', 'Black Spray Paint', 'Standard', '', 5, 76),
+  ('77', '3mm Double side tape', 'Standard', '', 3, 77),
+  ('78', '4 inch Cutting wheel', 'Standard', '', 6, 78),
+  ('79', 'Self Drilling & Tapping Screw', '3/4 inch length flange star head', '', 70, 79)
+) as v(sno, name, size, material, required_qty, sort_order)
+cross join public.checklist_sections s where s.name = 'Mechanical Kit';
+
+-- Door Frame & Door
+insert into public.checklist_items (section_id, sno, name, size, material, required_qty, sort_order)
+select s.id, v.sno, v.name, v.size, v.material, v.required_qty, v.sort_order from (values
+  ('1', 'Header Kit', 'Standard Based on the floor the quantity required', '', null::int, 1),
+  ('2', 'Header Bracket', 'Each Floor 2 no`s need RH - 1 no & LH - 1 no', '', null::int, 2),
+  ('3', 'Header Bracket Fixing Plate with 10mm Bolt Weld', 'Each Floor 2 no`s need', '', null::int, 3),
+  ('4', 'Car Door set Assembly', '', '', null::int, 4),
+  ('5', 'Landing Door set Assembly', '', '', null::int, 5),
+  ('6', 'LOP', 'Standard Based on the floor the quantity required', '', null::int, 6),
+  ('7', 'COP', 'Standard', '', 1, 7),
+  ('8', 'LH Door Frame with sub assembly', '', '', null::int, 8),
+  ('9', 'RH Door Frame with sub assembly', '', '', null::int, 9),
+  ('10', 'LOP Side Panel', '', '', null::int, 10),
+  ('11', 'Lentile Panels', '', '', null::int, 11)
+) as v(sno, name, size, material, required_qty, sort_order)
+cross join public.checklist_sections s where s.name = 'Door Frame & Door';
+
+-- Cabin
+insert into public.checklist_items (section_id, sno, name, size, material, required_qty, sort_order)
+select s.id, v.sno, v.name, v.size, v.material, v.required_qty, v.sort_order from (values
+  ('1', 'Base Plate With Sub Assembly', '', 'MS', 1, 1),
+  ('2', 'Top Plate With Sub Assembly', '', 'MS', 1, 2),
+  ('3', 'Sill Bracket', '', 'MS', 1, 3),
+  ('4', 'Left Side Glass Panel', '', '', 1, 4),
+  ('5', 'Rear Side Glass Panel', '', '', 1, 5),
+  ('6', 'COP Panel', '', '', 1, 6),
+  ('7', 'COP side LH Panel', '', '', 1, 7),
+  ('8', 'COP side RH Panel', '', '', 1, 8),
+  ('9', 'COP Back Side Cover', '', '', 1, 9),
+  ('10', 'Front Right Side panel', '', '', 1, 10),
+  ('11', 'Front Left Side panel', '', '', 1, 11),
+  ('12', 'Lentile', '', '', 1, 12),
+  ('13', 'Fall Ceilling', '', '', 1, 13),
+  ('14', 'Fall Ceilling Bracket', '', '', 4, 14),
+  ('15', 'M8 Bolt', 'M8 X 25mm', 'Standard', 120, 15),
+  ('16', 'M8 Plate washer', 'Standard', 'Standard', 240, 16),
+  ('17', 'M8 Nut', 'Standard', 'Standard', 120, 17),
+  ('18', 'Lift to Floor Gap Plate Based on the floor', '', 'MS', null::int, 18),
+  ('20', 'Left side LH panel', '', '', 1, 19),
+  ('21', 'Left side Centre panel', '', '', 1, 20),
+  ('22', 'Left side RH panel', '', '', 1, 21),
+  ('23', 'Rear side LH panel', '', '', 1, 22),
+  ('24', 'Rear side Centre panel', '', '', 1, 23),
+  ('25', 'Rear side RH panel', '', '', 1, 24)
+) as v(sno, name, size, material, required_qty, sort_order)
+cross join public.checklist_sections s where s.name = 'Cabin';
