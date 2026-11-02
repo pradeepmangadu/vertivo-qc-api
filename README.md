@@ -26,7 +26,7 @@ This repository includes a Render Blueprint in `render.yaml`.
 3. Keep the service-role key only in Render's environment settings. Do not put it in frontend configuration or commit it.
 4. After deployment, verify the service's `/healthz` endpoint returns `{"ok":true}`.
 
-The Blueprint uses `npm ci && npm run build`, `npm start`, and `/healthz` as the health check. Render supplies `PORT`; the server listens on it automatically. `NODE_ENV=production` and `TRUST_PROXY=1` are configured by the Blueprint. Since authentication uses `SameSite=Strict` cookies, host the frontend and API on the same site (for example, `app.example.com` and `api.example.com`).
+The Blueprint uses `npm ci --include=dev && npm run build`, `npm start`, and `/healthz` as the health check. Render supplies `PORT`; the server listens on it automatically. `NODE_ENV=production` and `TRUST_PROXY=1` are configured by the Blueprint. Production auth cookies use `SameSite=None; Secure` so the frontend can call the API across origins; the API still requires credentialed requests, a matching CSRF cookie/header, and the configured frontend origin. If the browser blocks third-party cookies, use a custom domain and host both services on the same site (for example, `app.example.com` and `api.example.com`).
 
 ## 4. API (all routes except /auth/* and /healthz need a session)
 | Method | Path | Notes |
@@ -47,8 +47,8 @@ The Blueprint uses `npm ci && npm run build`, `npm start`, and `/healthz` as the
 ## 5. Security notes
 - **Secrets**: `SUPABASE_SERVICE_ROLE_KEY` exists only here. `.env` is git-ignored; env is validated at boot and values are never logged.
 - **DB lockdown**: RLS enabled with no policies + revoked grants → the anon key reads nothing. Storage bucket is private.
-- **Sessions**: Supabase tokens live in `HttpOnly; Secure; SameSite=Strict` cookies — never in JS or localStorage. Refresh cookie is scoped to `/auth`.
-- **CSRF**: double-submit token + strict `Origin` check on every non-GET request. Deploy frontend and API on the **same site** (e.g. `app.example.com` + `api.example.com`) because cookies are `SameSite=Strict`.
+- **Sessions**: Supabase tokens live in `HttpOnly; Secure` cookies — never in JS or localStorage. Production uses `SameSite=None` for cross-origin frontend/API requests; development uses `SameSite=Strict`. Refresh cookie is scoped to `/auth`.
+- **CSRF**: double-submit token + strict `Origin` check on every non-GET request. Frontend API calls must include credentials. If the browser blocks third-party cookies, deploy frontend and API on the same site (e.g. `app.example.com` + `api.example.com`).
 - **AuthZ**: every delivery query is scoped to the caller (inspector → own; admin → all). Foreign IDs return 404. Admin-only delete.
 - **Validation**: zod on all params/bodies, `.strict()` (no mass assignment), DB CHECK constraints as a second layer.
 - **Uploads**: ownership checked before buffering, size cap, real-format check, EXIF/GPS stripped, re-encoded, server-generated paths, signed URLs (5 min).

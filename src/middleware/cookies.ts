@@ -2,7 +2,8 @@ import type { Response } from 'express';
 import { COOKIES } from '../constants.js';
 import { isProd } from '../config/env.js';
 
-const base = { httpOnly: true, secure: isProd, sameSite: 'strict' as const };
+const sameSite = isProd ? 'none' as const : 'strict' as const;
+const base = { httpOnly: true, secure: isProd, sameSite };
 
 export function setSessionCookies(res: Response, s: { access_token: string; refresh_token: string; expires_in: number }) {
   res.cookie(COOKIES.access, s.access_token, { ...base, path: '/', maxAge: s.expires_in * 1000 });
